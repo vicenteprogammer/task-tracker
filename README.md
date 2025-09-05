@@ -21,6 +21,11 @@ Instalar dependências:
 ```bash
 npm i
 ```
+Criar variáveis ambientes:
+```bash
+PORT=3000
+```
+
 Executar todo o código
 ```bash
 npm start
