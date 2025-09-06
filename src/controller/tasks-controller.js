@@ -1,9 +1,10 @@
+import { tasks } from "../data/tasks.js";
 import registerTask from "../services/register-task.js";
 async function register(req, res){
     const task = req.body;
     console.log(task)
     const response = await registerTask(task);
-    
+    console.log(tasks)
     if(response){
         return res.status(200).send('Task add Sucessful')
     }else{
