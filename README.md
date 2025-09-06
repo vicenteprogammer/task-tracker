@@ -1,6 +1,6 @@
 # Task-Tracker
 
-### Uma mini projeto back-end para rastrear suas tarefas diárias através do terminal.
+### Uma mini projeto back-end para rastrear suas tarefas diárias.
 
 ### Arquitetura do projeto:
 !["Arch API"](./docs/arch.png)
