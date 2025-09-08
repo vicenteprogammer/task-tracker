@@ -1,10 +1,12 @@
 import { Router } from "express";
-import register from "../controller/tasks-controller.js";
+import controller from "../controller/tasks-controller.js";
 
 const tasksRoutes = Router();
 
-tasksRoutes.post('/register', register)
-
+tasksRoutes.post('/register',controller.register)
+tasksRoutes.get('/listAll', controller.listAll)
+tasksRoutes.get('/listdone', controller.listDoneTasks)
+tasksRoutes.put('/updateStatsTask', controller.update)
 /*tasksRoutes.post('/register', (req, res)=>{
     res.s
 })*/
