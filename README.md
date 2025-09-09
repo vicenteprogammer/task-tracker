@@ -30,4 +30,32 @@ Executar todo o código
 ```bash
 npm start
 ```
+### Endpoints
 
+Registrar task:
+```
+POST -> /register
+```
+
+Listar todas as tasks:
+```
+GET -> /listAll
+```
+
+Listar tasks concluídas:
+```
+GET -> /listdone
+```
+
+Atualizar status da task por id:
+```
+PUT -> /updateStatsTask
+```
+
+Deletar tasks:
+```
+DELETE -> /delete
+```
+
+
+### Projeto finalizado, não foi uma coisa tão complexa, mas consegui relembrar e praticar os estudos de back-end.😅
