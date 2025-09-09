@@ -34,7 +34,6 @@ async function listDoneTasks(req, res){
 
 async function update(req, res) {
     let task = req.body;
-    console.log(task)
     if(tasks.length === 0){
         return res.status(200).send('Not tasks in list')
     }else{
