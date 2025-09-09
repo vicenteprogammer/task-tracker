@@ -5,17 +5,19 @@ async function registerTask(task) {
     if (Object.keys(task).length === 0 && Object.keys(task) < 5) {
         return false
     } else {
-        let id = 1
-        if (tasks.map((t) => t.id === id).length === 0) {
+        task.id = 1
+        let id = 1;
+        let next = tasks.map((t) => t.id === id);
+        if (next.length >  0) {
+            id += next.length
             task.id = id
             tasks.push(task)
-            return true
+            return true 
         }else{
-            id += 1
-            task.id = id
             tasks.push(task)
             return true
         }
+        
     }
 }
 
