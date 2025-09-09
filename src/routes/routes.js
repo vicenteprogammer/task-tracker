@@ -7,6 +7,7 @@ tasksRoutes.post('/register',controller.register)
 tasksRoutes.get('/listAll', controller.listAll)
 tasksRoutes.get('/listdone', controller.listDoneTasks)
 tasksRoutes.put('/updateStatsTask', controller.update)
+tasksRoutes.delete('/delete', controller.deleteTask)
 /*tasksRoutes.post('/register', (req, res)=>{
     res.s
 })*/

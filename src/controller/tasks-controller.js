@@ -1,4 +1,5 @@
 import { tasks } from "../data/tasks.js";
+import deleteTasks from "../services/delete-tasks.js";
 import listDone from "../services/list-done-tasks.js";
 import registerTask from "../services/register-task.js";
 import updateStats from "../services/update-stats-task.js";
@@ -42,11 +43,22 @@ async function update(req, res) {
     }
 }
 
+async function deleteTask(req, res) {
+    let task = req.body;
+    if(tasks.length === 0){
+        return res.status(200).send('Not tasks in list')
+    }else{
+        await deleteTasks(task)
+        return res.send("Task delete sucessful")
+    }
+}
+
 
 
 export default{
     register,
     listAll,
     listDoneTasks,
-    update
+    update,
+    deleteTask
 }
